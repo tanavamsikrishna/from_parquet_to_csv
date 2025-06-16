@@ -1,0 +1,8 @@
+[package]
+name = "from_parquet_to_csv"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "*", features = ["derive"] }
+polars = { version = "*", features = ["lazy", "parquet", "polars-io"] }
